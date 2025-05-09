@@ -137,4 +137,45 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-       
+            android:gravity="center_vertical"
+            android:text="BMI="
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Chuẩn đoán:"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtDiagnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:inputType="number" />
+    </TableRow>
+</TableLayout>
