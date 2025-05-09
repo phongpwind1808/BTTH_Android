@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="hint_a">Nhập A</string>
+    <string name="hint_b">Nhập B</string>
+    <string name="hint_kq">Kết quả</string>
+    <string name="btn_cong">Cộng</string>
+</resources>
