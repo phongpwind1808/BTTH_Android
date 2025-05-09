@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="Demo Cycle Life"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp" />
+        android:layout_marginEnd="2dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Bai2_vongdoi"
+        app:titleTextColor="@color/white" />
 
-    <Button
-        android:id="@+id/btncall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call Dialog"
-        android:textSize="24sp"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Demo Cycle Life"
+            android:textAlignment="center"
+            android:textColor="#3E9520"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#CCCBCB"
+            android:backgroundTintMode="src_atop"
+            android:text="CALL DIALOG"
+            android:textAlignment="center"
+            android:textColor="#100F0F" />
+    </LinearLayout>
 </LinearLayout>
