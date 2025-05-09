@@ -1,4 +1,4 @@
-package com.example.temperatureconversionapp;
+package com.example.lab41_changetemperature;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -27,3 +27,29 @@ public class MainActivity extends AppCompatActivity {
         btnToF = findViewById(R.id.btnToF);
         btnClear = findViewById(R.id.btnClear);
         btnToC.setOnClickListener(v -> {
+            String strF = edtF.getText().toString();
+            if (!strF.isEmpty()) {
+                double f = Double.parseDouble(strF);
+                double c = (f - 32) * 5 / 9;
+                edtC.setText(String.valueOf(c));
+            }
+        });
+        btnToF.setOnClickListener(v -> {
+            String strC = edtC.getText().toString();
+            if (!strC.isEmpty()) {
+                double c = Double.parseDouble(strC);
+                double f = (c * 9 / 5) + 32;
+                edtF.setText(String.valueOf(f));
+            }
+        });
+        btnClear.setOnClickListener(v -> {
+            edtF.setText("");
+            edtC.setText("");
+        });
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+}
