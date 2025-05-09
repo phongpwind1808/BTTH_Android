@@ -51,20 +51,14 @@ public class MainActivity extends AppCompatActivity {
                     int c = a + b;
 
 
-                // Tạo Intent để chuyển sang Activity_main_result
-                    Intent intent = new Intent(MainActivity.this, MainResultactivity.class);
-                    // Gửi biến c sang Activity khác
-                    intent.putExtra("result", a);
-
-// Bắt đầu Activity
-                    startActivity(intent);
 
 
-                    // Hiển thị kết quả
-                    // edtKQ.setText(String.valueOf(c));
-                    // 3Toast.makeText(MainActivity.this, "Tính toán thành công!", Toast.LENGTH_SHORT).show();
+
+
+                     edtKQ.setText(String.valueOf(c));
+                     Toast.makeText(MainActivity.this, "Tính toán thành công!", Toast.LENGTH_SHORT).show();
                 } catch (NumberFormatException e) {
-                    // edtKQ.setText("Lỗi nhập!");
+                     edtKQ.setText("Lỗi nhập!");
                 }
             }
         });
