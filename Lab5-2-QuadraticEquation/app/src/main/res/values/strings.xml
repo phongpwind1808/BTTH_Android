@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/strings.xml - Tệp chuỗi ngôn ngữ cập nhật -->
+<resources>
+    <string name="app_name">Vidu_Ptb2</string>
+    <string name="app_title">Giải phương trình bậc 2</string>
+
+    <!-- Labels -->
+    <string name="label_enter_a">Nhập a:</string>
+    <string name="label_enter_b">Nhập b:</string>
+    <string name="label_enter_c">Nhập c:</string>
+    <string name="label_continue">Tiếp tục:</string>
+
+    <!-- Hints -->
+    <string name="hint_enter_a">Nhập hệ số a</string>
+    <string name="hint_enter_b">Nhập hệ số b</string>
+    <string name="hint_enter_c">Nhập hệ số c</string>
+
+    <!-- Buttons -->
+    <string name="button_solve">Giải PT</string>
+    <string name="button_exit">Thoát</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_coefficient_a">Hệ số a của phương trình</string>
+    <string name="desc_coefficient_b">Hệ số b của phương trình</string>
+    <string name="desc_coefficient_c">Hệ số c của phương trình</string>
+    <string name="desc_result">Kết quả giải phương trình</string>
+    <string name="desc_solve_button">Giải phương trình bậc 2</string>
+    <string name="desc_exit_button">Thoát khỏi ứng dụng</string>
+</resources>

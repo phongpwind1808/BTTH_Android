@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml đã được cập nhật để khắc phục các vấn đề về accessibility -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TestActivity">
+
+    <!-- Tiêu đề ứng dụng -->
+    <TextView
+        android:id="@+id/lblForm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giải phương trình bậc 2"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:padding="8dp"
+        android:gravity="center"/>
+
+    <!-- Nhập hệ số a -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/lblFormA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập a:"
+            android:labelFor="@+id/editTextA"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTextA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8F5E9"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="Nhập hệ số a"
+            android:importantForAutofill="yes"
+            android:autofillHints="numberDecimal"
+            android:minHeight="48dp"
+            android:contentDescription="Nhập hệ số a của phương trình"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Nhập hệ số b -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/lblFormB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập b:"
+            android:labelFor="@+id/editTextB"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTextB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8F5E9"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="Nhập hệ số b"
+            android:importantForAutofill="yes"
+            android:autofillHints="numberDecimal"
+            android:minHeight="48dp"
+            android:contentDescription="Nhập hệ số b của phương trình"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Nhập hệ số c -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/lblFormC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập c:"
+            android:labelFor="@+id/editTextC"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editTextC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8F5E9"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="Nhập hệ số c"
+            android:importantForAutofill="yes"
+            android:autofillHints="numberDecimal"
+            android:minHeight="48dp"
+            android:contentDescription="Nhập hệ số c của phương trình"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Khu vực hiển thị kết quả -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:contentDescription="Kết quả giải phương trình"
+        android:minHeight="60dp"/>
+
+    <!-- Các nút tác vụ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/lblForm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếp tục:"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/buttonCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giải PT"
+            android:contentDescription="Giải phương trình bậc 2"
+            android:minHeight="48dp"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:contentDescription="Thoát khỏi ứng dụng"
+            android:minHeight="48dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
