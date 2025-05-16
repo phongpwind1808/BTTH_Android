@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SpinnerApp</string>
+    <string name="select_category">Chọn loại hàng</string>
+    <string name="you_selected">Bạn đã chọn:</string>
+
+    <string-array name="category_array">
+        <item>Hàng gia dụng</item>
+        <item>Hàng điện tử</item>
+        <item>Hàng hóa chất</item>
+    </string-array>
+</resources>
