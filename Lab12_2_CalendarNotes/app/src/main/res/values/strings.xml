@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Lab12_2_CalendarNotes</string>
+    <string name="app_name">Listview_new</string>
+    <string name="title">Calendar Notes</string>
+    <string name="today">Hôm Nay:</string>
+    <string name="enter_work">Nhập công việc...</string>
+    <string name="hour">Giờ</string>
+    <string name="minute">Phút</string>
+    <string name="add_work">Thêm Công Việc</string>
 </resources>
