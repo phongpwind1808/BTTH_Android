@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab7_1_IntentBasic</string>
+    <string name="main_text">This is main Activity</string>
+
+</resources>
