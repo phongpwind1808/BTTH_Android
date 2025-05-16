@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AutoCompleteTextViewActivity</string>
+    <string name="label_title">Nhập tỉnh/thành phố:</string>
+    <string name="hint_enter_city">Ví dụ: Hà Nội, Huế, ...</string>
+</resources>
