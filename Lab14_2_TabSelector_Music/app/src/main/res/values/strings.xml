@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bai14_TabSelector_2_new</string>
+    <string name="tab1_name">Tab 1</string>
+    <string name="tab2_name">Tab 2</string>
+    <string name="tab3_name">Tab 3</string>
+    <string name="search_hint">Nhập tên bài hát</string>
+
+    <!-- Danh sách bài hát Tab 1 -->
+    <string name="song_52300">Em là ai Tôi là ai</string>
+    <string name="song_52600">Bài ca đất Phương Nam</string>
+    <string name="song_52567">Buồn của Anh</string>
+
+    <!-- Danh sách bài hát Tab 2 -->
+    <string name="song_57236">Gởi em ở cuối sông hồng</string>
+    <string name="song_51548">Quê hương tuổi thơi tôi</string>
+    <string name="song_51748">Em gì ơi</string>
+
+    <!-- Danh sách bài hát Tab 3 -->
+    <string name="song_57689">Hát với dòng sông</string>
+    <string name="song_58716">Say tình _ Remix</string>
+    <string name="song_58916">Người hãy quên em đi</string>
+</resources>
