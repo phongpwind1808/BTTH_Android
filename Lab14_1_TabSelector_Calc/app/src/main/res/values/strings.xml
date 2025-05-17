@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tab_selector</string>
+    <string name="tab1_name">Pháp công</string>
+    <string name="tab2_name">Lịch sử</string>
+    <string name="input_a">Nhập a</string>
+    <string name="input_b">Nhập b</string>
+    <string name="calc_button">+</string>
+</resources>
