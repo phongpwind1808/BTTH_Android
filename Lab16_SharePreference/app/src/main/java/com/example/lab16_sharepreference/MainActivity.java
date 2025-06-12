@@ -35,7 +35,27 @@ public class MainActivity extends AppCompatActivity {
         lichsu = myprefs.getString("ls","");
         txtlichsu.setText(lichsu);
         //-------------------------------------------------
-        
+        btntong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt(edta.getText().toString());
+                int b = Integer.parseInt(edtb.getText().toString());
+                int kq = a + b;
+                edtkq.setText(kq+"");
+                lichsu += a+"+"+b+" = "+kq;
+                txtlichsu.setText(lichsu);
+                lichsu += "\n"; // Xuống dòng
+            }
+        });
+
+        btnclear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lichsu ="";
+                txtlichsu.setText(lichsu);
+            }
+        });
+
     } // Đóng phương thức onCreate
 
     @Override
