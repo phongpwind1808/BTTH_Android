@@ -68,8 +68,55 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-//        @Override
+        @Override
+        protected ArrayList<Tygia> doInBackground(Void... params) {
+            ArrayList<Tygia> ds = new ArrayList<Tygia>();
+            try {
+                URL url = new URL("https://api.exchangerate-api.com/v4/latest/USD");
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("GET");
+                connection.setRequestProperty("Content-type", "application/json; charset=utf-8");
+                connection.setRequestProperty("User-Agent", "Mozilla/5.0 ( compatible ) ");
+                connection.setRequestProperty("Accept", "*/*");
 
+                InputStream is = connection.getInputStream();
+                BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+                StringBuilder builder = new StringBuilder();
+                String line = null;
+                while ((line = br.readLine()) != null) {
+                    builder.append(line);
+                }
+
+                String json = builder.toString();
+                Log.d("JSON_DONGA", "Chuỗi JSON nhận được: " + json);
+
+                JSONObject jsonObject = new JSONObject(json);
+                JSONObject ratesObject = jsonObject.getJSONObject("rates");
+
+                // Bạn muốn hiển thị các loại tiền cụ thể → duyệt qua keys của rates
+                Iterator<String> keys = ratesObject.keys();
+                while (keys.hasNext()) {
+                    String currencyCode = keys.next(); // Ví dụ: "VND", "EUR"
+                    String rate = ratesObject.get(currencyCode).toString();
+
+                    Tygia tyGia = new Tygia();
+                    tyGia.setType(currencyCode);
+                    tyGia.setMuatienmat(rate); // Tạm dùng làm "mua tiền mặt"
+                    tyGia.setMuack(""); // Không có trong API này
+                    tyGia.setBantienmat(""); // Không có trong API này
+                    tyGia.setBanck(""); // Không có trong API này
+                    tyGia.setImageurl(""); // Không có hình ảnh
+
+                    ds.add(tyGia);
+                }
+
+                if (is != null) is.close();
+                connection.disconnect();
+            } catch (Exception ex) {
+                Log.e("LoiTyGiaTask", ex.toString());
+            }
+            return ds;
+        }
 
 
         @Override
