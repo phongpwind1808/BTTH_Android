@@ -6,6 +6,7 @@ android {
     namespace = "com.example.lab23vnexpress"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "com.example.lab23vnexpress"
         minSdk = 24
@@ -15,7 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    useLibrary("org.apache.http.legacy")
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -41,3 +42,4 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
